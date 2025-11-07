@@ -18,7 +18,8 @@ const routes = [
   { path: '/product/:id', name: 'ProductDetail', component: ProductDetail},
   { path: '/notifications', component: () => import('@/views/NotificationsView.vue') },
   { path: '/cart', component: () => import('@/views/CartView.vue') },
-  { path: '/account', component: () => import('@/views/AccountView.vue') }
+  { path: '/account', component: () => import('@/views/AccountView.vue') },
+  { path: '/checkout', name: 'checkout', component: () => import('@/views/CheckOutPage.vue') }
 ];
 
 const router = createRouter({
